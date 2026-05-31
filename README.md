@@ -639,6 +639,48 @@ Python provides the truth. The AI provides the foresight. Together, they form th
 
 
 
+Q23. Shall we paste the JSON output and prompt into any AI, or does it have to be DeepSeek AI?
+Answer:
+According to the Sentinel-44 workflow, the preferred AI model is DeepSeek AI.
+The system was tested extensively using DeepSeek, and its outputs were found to align most consistently with the framework's forecasting methodology. Other AI models may apply different internal guardrails, safety layers, or response-generation approaches, which can affect how they interpret the JSON payload and prompt.
+While other models such as ChatGPT, Gemini, or Claude may be capable of processing the data, they have not been tested as extensively within this specific workflow. Therefore, for consistency and repeatability, DeepSeek is the recommended option.
+You may use different DeepSeek modes, including Flash or Thinking modes, depending on your preference.
+
+
+Q24. When you paste the JSON file and prompt into DeepSeek AI in different chats, does it produce different outputs?
+Answer:
+Generally, no.
+The prompt was carefully researched and structured to minimize output variance and maximize consistency.
+Because the prompt follows a highly deterministic format, repeating the same JSON payload and prompt in separate DeepSeek chat sessions typically produces outputs that are approximately 80% similar.
+As a result, running the prompt in multiple chats is usually unnecessary unless you specifically want to compare slight variations in interpretation.
+
+
+Q25. If DeepSeek AI does not search the internet when you paste the JSON, how does it know what happens next? How does it generate predictions based on your data?
+Answer:
+DeepSeek generates forecasts using the knowledge contained within its training data.
+When it receives the structured JSON payload, it does not need to search the internet. Instead, it compares the current combination of variables against patterns, relationships, and historical scenarios learned during training.
+The model identifies similarities between the present data and historical situations. Based on those learned patterns, it estimates what types of events have historically followed similar conditions.
+This process allows the AI to generate forecasts using the supplied data as the starting point.
+
+
+Q26. Does the Python program use data older than one month? Are the predictions also based on periods longer than one month?
+Answer:
+No.
+The system is designed to operate on a strict rolling 30-day data window.
+The Python framework filters out data that falls outside the defined timeframe and focuses exclusively on the most recent month of information.
+Using this recent data, the AI analyzes current patterns and compares them with historical relationships learned during training. The resulting forecasts are intended to focus on the upcoming 1-to-30-day period rather than long-term, multi-year projections.
+
+
+Q27. Which AI models were used as assistants for coding and design decisions?
+Answer:
+The primary AI assistants used for coding support, architecture discussions, and design decisions were:
+Claude
+Gemini Pro
+These models were utilized during development, research, and refinement of the Sentinel-44 framework.
+
+
+
+
 🟣WHY THE NAME SENTINEL 44 WORLD :
 
 
