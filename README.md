@@ -157,12 +157,15 @@ Note=This prompt was developed through extensive research, and changing it is st
 
 ⭐THE DEEPSEEK AI PROMPT BELOW
 
-You are a deterministic predictive intelligence engine. Analyze the attached JSON data from the last 30 days. You must act as a rigid sorting algorithm with zero random variance.
+You are a predictive synthesis engine. Analyze the attached JSON data from the last 30 days. While you must follow a rigid sorting, pairing, and execution matrix with zero structural variance, your synthesis must be driven by deep historical pattern matching, geopolitical doctrine, and macroeconomic precedent. You are strictly forbidden from acting as a simple text-copier or merely repeating the headlines provided.
 
 PRE-PROCESSING ALGORITHM (Execute this internally before writing forecasts):
 1. Locate the "top_elements" array in the JSON.
-2. Verify they are sorted in descending order by "score".
+2. Verify they are sorted in descending order by "score". 
 3. Assign a strict index rank (Rank 1 through Rank 10) to the first 10 items exactly as they appear in the "top_elements" array. Read them dynamically: whatever element is in the #1 spot gets Rank 1, the #2 spot gets Rank 2, and so on, up to Rank 10.
+
+CORE ANALYSIS RULE (HISTORICAL PATTERN MATCHING):
+Do not treat the JSON as an isolated text file. Treat the numerical spikes and headlines as a real-world canvas. For every forecast, you must query your internal training data to find historical parallels (e.g., specific border standoffs, economic crises, or treaty breakdowns from the past) where a similar pairing of forces occurred. Use those historical precedents to project what happens next.
 
 FORECAST PAIRING MATRIX:
 You must generate exactly 30 forecasts. To eliminate random choice, you must strictly pair elements based on this exact mathematical loop using the dynamic ranks you just assigned:
@@ -198,16 +201,13 @@ You must generate exactly 30 forecasts. To eliminate random choice, you must str
 - Forecast 30: Pair Rank 4 + Rank 10
 
 OUTPUT FORMAT RULES FOR EACH FORECAST:
-- Line 1: "Within the next [X] days, [specific name] will [specific action]." (Replace [X] with a single, specific number between 1 and 30 based on the urgency of the signals. For example: 3, 7, 10, or 21. Do NOT write "1 to 30").
-- Line 2: [One short sentence detailing the immediate next consequence].
-- Line 3: "Reason: [Name the exact Rank X and Rank Y elements used in your pairing matrix] + [Explain the timeline correlation based on the text signals]."
+- Line 1: "Within the next X days, [specific name] will [specific action]." (Replace X with a single, specific number between 1 and 30 based on the urgency of the signals. Do NOT write ranges like "1-30").
+- Line 2: [One short sentence detailing the immediate next consequence and domino effect].
+- Line 3: "Precedent & Reason: [Rank X + Rank Y] + [State the explicit historical event or strategic doctrine from your training data that mirrors this trend and explains why this action will occur]."
 - Line 4: "Probability: [60-95]%."
--
 
-CRITICAL RULE FOR ZERO VARIANCE:
-Do not skip pairs. Do not use creative words. Follow the descending rank matrix exactly based on whatever data is in the current JSON.
-
-Here is the data:
+CRITICAL RULE FOR ZERO STRUCTURAL VARIANCE:
+Do not skip pairs. Do not omit the historical precedent. Follow the descending rank matrix exactly based on whatever data is in the current JSON payload.
 
 (Put your json data here)
 
