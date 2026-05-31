@@ -606,6 +606,104 @@ Ans=Ai is good at patterns infact ai matches the patterns of json and sees when 
 
 
 
+
+
+Here are visual, text-based diagrams to help anyone easily grasp the mathematical concepts behind Sentinel-44.
+1. Asymptotic Scoring (The "Shrinking Gap" Method)
+This visualizes how scores can never cross 100. As the score gets higher, the "gap" to 100 gets smaller, so the points added become smaller too.
+
+
+
+SCENARIO A: Starting from Zero
+[0] ................................................................ [100]
+    |----------------------- Gap is 100 -----------------------|
+    + Add 10% of the gap (10)
+    = New Score: 10
+
+
+SCENARIO B: Already High Score
+[0] ======================================================== [90] .. [100]
+                                                              | Gap:10|
+                                                              + 10% of 10 (1)
+                                                              = New Score: 91
+
+
+
+2. Momentum Analysis (The Price Engine)
+This breaks down the percentage change formula into a simple machine that calculates how much a trend is accelerating.
+
+
+
+ ┌────────────────┐      ┌────────────────┐
+ │ Current Price  │  ➖  │ Starting Price │
+ └───────┬────────┘      └────────┬───────┘
+         │                        │
+         └───────────┐┌───────────┘
+                     ▼▼
+              ┌──────────────┐
+              │  Difference  │  (How much it grew/shrank)
+              └──────┬───────┘
+                     │
+             ➗ Starting Price
+                     │
+                     ▼
+              ┌──────────────┐
+              │    Result    │  ✖️ 100 🟰  MOMENTUM %
+              └──────────────┘
+
+
+
+Bitcoin Example: ($60k - $50k) = $10k ➡️ $10k ÷ $50k = 0.20 ➡️ 0.20 ✖️ 100 = 20%
+3. Sentiment Analysis (The Mood Meter)
+Headlines are fed into the system and plotted on a simple gauge from total despair to absolute optimism.
+
+
+
+   FEAR / PANIC                NEUTRAL                HOPE / EUPHORIA
+ ◄════════════════════════════════╬════════════════════════════════►
+ -1.0           -0.5             0.0             +0.5             +1.0
+                 ▲
+                 │
+           Score: -0.25
+      (News is leaning negative)
+
+
+
+
+4. Composite Risk Scores (The Funnel)
+This shows how individual, specific data points are gathered and compressed into a single, easy-to-read "Macro-Risk" category.
+
+
+
+      INDIVIDUAL ELEMENTS                      MACRO CATEGORY
+      -------------------                      --------------
+ 
+ 1. 📊 Inflation (Score: 60) ─────┐
+                                  │
+ 2. 💳 Debt Crisis (Score: 80) ───┤      Sum: 260
+                                  │ ──►  Divided by 4 ──►  [ ECONOMIC RISK ]
+ 3. 📉 Stock Market (Score: 30) ──┤                        [   SCORE: 65   ]
+                                  │
+ 4. ⚡ Energy Crisis (Score: 90) ─┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 🟪FULL DETAILS
 
 
@@ -3108,4 +3206,3 @@ Within 18 days – Ebola spreads from DRC to Uganda; WHO issues emergency.
 
 
 
-Together, they create a powerful decision-support platform capable of assisting traders, corporations, security teams, supply chain managers, and geopolitical analysts in understanding and anticipating emerging global risks.
