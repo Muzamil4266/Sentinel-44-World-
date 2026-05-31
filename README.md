@@ -2985,7 +2985,7 @@ Within 29 days, SoftBank’s Masayoshi Son will announce ARM will stop selling c
 
 
 
-🟣Finals preductions frim 3 different chats of deepseek
+🟣Finals preductions from 3 different chats of deepseek
 
 
 🔷Chat 1
