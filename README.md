@@ -106,7 +106,7 @@ Summary
 Sentinel-44 is a closed-loop intelligence pipeline. It uses Python to mathematically structure the chaos of global data, limits false positives through asymptotic calculus and strict physical weighting, and uses a locked-down, cheat-free LLM matrix to translate that math into 90 highly specific, short-term geopolitical and economic predictions.
 
 
-![SENTINEL 44 WORLD](SENTINEL%2044%20WORLD.png)
+
 
 
 
