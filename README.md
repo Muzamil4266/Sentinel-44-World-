@@ -676,7 +676,15 @@ Claude
 Gemini Pro
 These models were utilized during development, research, and refinement of the Sentinel-44 framework.
 
+Q28. If running the prompt in ChatGPT one time generates 30 forecasts, and running it a second time generates essentially the same forecasts (with different wording but similar meanings and only slight variations), then why run it twice at all?
 
+Answer:You can absolutely run it only once, and in most cases there is no need to run it a second time. A single run already provides forecasts for the next 1–30 days based on the available data. However, if you believe that separate ChatGPT sessions may produce slightly different insights or alternative interpretations, you may choose to run the prompt a second time and compare the results. This can serve as a form of cross-verification.
+If both outputs are largely similar, there is little benefit in running the prompt twice. The most important requirement is that web search remains enabled while running the prompt so that the AI can access the latest information.
+It is also important to note that running the prompt is different from running the Python program. The Python program only needs to be run periodically—typically every several days or once per week—to ingest and process new data. After the program has updated the dataset, you can run the prompt to generate the latest forecasts.
+The default workflow is simple:
+Run the Python program once per week to collect and process new data.
+Run the ChatGPT prompt once to generate the latest forecasts.
+That is usually sufficient for Sentinel-44 operations.
 
 
 🟣WHY THE NAME SENTINEL 44 WORLD :
