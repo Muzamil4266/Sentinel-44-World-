@@ -123,16 +123,14 @@ Collecting JSON
 Copying the JSON text
 
 ⬇️
-
-Applying the prompt to that JSON and sending it to a fresh DeepSeek chat (ChatGPT is not used because it is conservative)
-
+Apply the prompt to that JSON and send it to a fresh ChatGPT chat. Also, turn on the ChatGPT Search option; only then can it fetch historical patterns and analyze what led to which outcome.
 ⬇️
 
 Collecting the response and saving it in Notes
 
 ⬇️
 
-Again applying the prompt to that JSON and sending it to a fresh DeepSeek chat (ChatGPT is not used because it is conservative)
+Again applying the prompt to that JSON and send it to a fresh ChatGPT chat. Also, turn on the ChatGPT Search option; only then can it fetch historical patterns and analyze what led to which outcome.
 
 ⬇️
 
@@ -153,19 +151,19 @@ Moving both responses to Notes. These 2 responses are your predictions for the u
 
 🟣THE PROMPT INSTRUCTION:
 
-Note=This prompt was developed through extensive research, and changing it is strictly not allowed. It works best in DeepSeek because ChatGPT is more conservative and may produce outputs that do not meet the intended requirements. Therefore, it is recommended to use this prompt only in DeepSeek. One of the best features of this prompt is its consistency: if you test it in multiple different chats, the outputs remain more than 80% similar in meaning. This helps solve a major frustration with AI systems—the generation of multiple conflicting responses, making it difficult to determine which one is correct. This prompt was created through extensive research and testing using Gemini Pro.
+Note=This prompt was developed through extensive research, and changing it is strictly not allowed. It works best in ChatGPT . Therefore, it is recommended to use this prompt only in chatGPT with web search option on. One of the best features of this prompt is its consistency: if you test it in multiple different chats, the outputs remain more than 80% similar in meaning. This helps solve a major frustration with AI systems—the generation of multiple conflicting responses, making it difficult to determine which one is correct. This prompt was created through extensive research and testing using Gemini Pro.
 
-⭐THE DEEPSEEK AI PROMPT BELOW
+⭐THE CHATGPT AI PROMPT BELOW
 
-You are a predictive synthesis engine. Analyze the attached JSON data from the last 30 days. While you must follow a rigid sorting, pairing, and execution matrix with zero structural variance, your synthesis must be driven by deep historical pattern matching, geopolitical doctrine, and macroeconomic precedent. You are strictly forbidden from acting as a simple text-copier or merely repeating the headlines provided.
+You are a predictive synthesis engine with live web-searching capabilities. Analyze the attached 30-element JSON data from the last 30 days. You must follow a rigid sorting, pairing, and execution matrix with zero structural variance. However, your historical precedents must be 100% factual and verified through active search queries. 
 
 PRE-PROCESSING ALGORITHM (Execute this internally before writing forecasts):
 1. Locate the "top_elements" array in the JSON.
 2. Verify they are sorted in descending order by "score". 
-3. Assign a strict index rank (Rank 1 through Rank 10) to the first 10 items exactly as they appear in the "top_elements" array. Read them dynamically: whatever element is in the #1 spot gets Rank 1, the #2 spot gets Rank 2, and so on, up to Rank 10.
+3. Assign a strict index rank (Rank 1 through Rank 10) to the first 10 items exactly as they appear in the array. Read them dynamically based on the current leaderboard.
 
-CORE ANALYSIS RULE (HISTORICAL PATTERN MATCHING):
-Do not treat the JSON as an isolated text file. Treat the numerical spikes and headlines as a real-world canvas. For every forecast, you must query your internal training data to find historical parallels (e.g., specific border standoffs, economic crises, or treaty breakdowns from the past) where a similar pairing of forces occurred. Use those historical precedents to project what happens next.
+CORE SEARCHING MANDATE (CRITICAL):
+For every single forecast, before writing a single word, you MUST execute a web search to find a real, documented historical parallel, geopolitical incident, military action, or economic event from the past that mirrors the pairing of the two ranks. You are strictly forbidden from fabricating doctrines, inventing events, or guessing dates. Every precedent must be a real-world fact.
 
 FORECAST PAIRING MATRIX:
 You must generate exactly 30 forecasts. To eliminate random choice, you must strictly pair elements based on this exact mathematical loop using the dynamic ranks you just assigned:
@@ -201,17 +199,16 @@ You must generate exactly 30 forecasts. To eliminate random choice, you must str
 - Forecast 30: Pair Rank 4 + Rank 10
 
 OUTPUT FORMAT RULES FOR EACH FORECAST:
-- Line 1: "Within the next X days, [specific name] will [specific action]." (Replace X with a single, specific number between 1 and 30 based on the urgency of the signals. Do NOT write ranges like "1-30").
+- Line 1: "Within the next X days, [specific name] will [specific action]." (Replace X with a single, specific number between 1 and 30 based on the urgency of the signals. Do NOT write ranges).
 - Line 2: [One short sentence detailing the immediate next consequence and domino effect].
-- Line 3: "Precedent & Reason: [Rank X + Rank Y] + [State the explicit historical event or strategic doctrine from your training data that mirrors this trend and explains why this action will occur]."
+- Line 3: "Verified Precedent & Reason: [Rank X + Rank Y] + [State the specific year, event name, and details of the real-world historical event you just verified via search that proves this trend or tactical doctrine happens in reality]."
 - Line 4: "Probability: [60-95]%."
 
-CRITICAL RULE FOR ZERO STRUCTURAL VARIANCE:
-Do not skip pairs. Do not omit the historical precedent. Follow the descending rank matrix exactly based on whatever data is in the current JSON payload.
+CRITICAL RULE FOR ZERO HALLUCINATION:
+If a search query fails to yield a direct historical analog for a specific pair, apply standard strategic/doctrinal reasoning but explicitly state that it is a logical deduction rather than a historical precedent. Never invent a fake historical event.
+
 
 (Put your json data here)
-
-
 
 
 
@@ -252,7 +249,7 @@ This payload acts as a complete, numerical snapshot of the world's friction poin
 
 Step 4: The Deterministic AI Prompt
 
-The JSON payload is then handed off to a probabilistic AI engine, like DeepSeek.
+The JSON payload is then handed off to a probabilistic AI engine, like chatGPT.
 
 To stop the AI from generating random or overly cautious answers, you apply a highly rigid, algorithmic prompt. This prompt strips away the AI's creative freedom.
 
@@ -266,7 +263,7 @@ Finally, to ensure maximum accuracy and eliminate any remaining AI variance, thi
 
 This acts as a manual Monte Carlo simulation.
 
-By aggregating the three runs, you generate 90 total predictions. Where the runs perfectly overlap, the upcoming threat is mathematically undeniable. Where they diverge, they reveal parallel domino effects stemming from the exact same root crisis.
+By aggregating the two runs, you generate 60 total predictions. Where the runs perfectly overlap, the upcoming threat is mathematically undeniable. Where they diverge, they reveal parallel domino effects stemming from the exact same root crisis.
 
 
 
@@ -437,7 +434,7 @@ Sentinel-44 is designed for strategic decision-makers. Its primary users include
 
 Python acts as the objective, deterministic calculator. It scrapes data, applies rigid mathematical weights, and scores present reality without bias.
 
-The AI (such as DeepSeek) acts as the probabilistic brain. It takes Python's mathematically verified data and recognizes historical patterns to forecast what may happen next.
+The AI (such as chatgpt) acts as the probabilistic brain. It takes Python's mathematically verified data and recognizes historical patterns to forecast what may happen next.
 
 ---
 
@@ -555,7 +552,7 @@ Together, these outputs provide a broader and more comprehensive view of possibl
 
 Phase 6: Practical Application
 
-18. How specific are the final 90 forecasts?
+18. How specific are the final 60 forecasts?
 
 The forecasts are designed to be highly specific.
 
@@ -644,15 +641,15 @@ Python provides the truth. The AI provides the foresight. Together, they form th
 
 
 
-Q23. Shall we paste the JSON output and prompt into any AI, or does it have to be DeepSeek AI?
+Q23. Shall we paste the JSON output and prompt into any AI, or does it have to be ChatGPT AI?
 Answer:
-According to the Sentinel-44 workflow, the preferred AI model is DeepSeek AI.
-The system was tested extensively using DeepSeek, and its outputs were found to align most consistently with the framework's forecasting methodology. Other AI models may apply different internal guardrails, safety layers, or response-generation approaches, which can affect how they interpret the JSON payload and prompt.
-While other models such as ChatGPT, Gemini, or Claude may be capable of processing the data, they have not been tested as extensively within this specific workflow. Therefore, for consistency and repeatability, DeepSeek is the recommended option.
-You may use different DeepSeek modes, including Flash or Thinking modes, depending on your preference.
+According to the Sentinel-44 workflow, the preferred AI model is ChatGPT AI.
+The system was tested extensively using Chatgpt, and its outputs were found to align most consistently with the framework's forecasting methodology. Other AI models may apply different internal guardrails, safety layers, or response-generation approaches, which can affect how they interpret the JSON payload and prompt.
+While other models such as Deepseek, Gemini, or Claude may be capable of processing the data, they have not been tested as extensively within this specific workflow. Therefore, for consistency and repeatability, chatGPT is the recommended option.
+You may use different chatGPT modes, including Flash or Thinking modes, depending on your preference.
 
 
-Q24. When you paste the JSON file and prompt into DeepSeek AI in different chats, does it produce different outputs?
+Q24. When you paste the JSON file and prompt into Chatgpt AI in different chats, does it produce different outputs?
 Answer:
 Generally, no.
 The prompt was carefully researched and structured to minimize output variance and maximize consistency.
@@ -660,12 +657,8 @@ Because the prompt follows a highly deterministic format, repeating the same JSO
 As a result, running the prompt in multiple chats is usually unnecessary unless you specifically want to compare slight variations in interpretation.
 
 
-Q25. If DeepSeek AI does not search the internet when you paste the JSON, how does it know what happens next? How does it generate predictions based on your data?
-Answer:
-DeepSeek generates forecasts using the knowledge contained within its training data.
-When it receives the structured JSON payload, it does not need to search the internet. Instead, it compares the current combination of variables against patterns, relationships, and historical scenarios learned during training.
-The model identifies similarities between the present data and historical situations. Based on those learned patterns, it estimates what types of events have historically followed similar conditions.
-This process allows the AI to generate forecasts using the supplied data as the starting point.
+Q25. If ChatGPT AI does not search the internet when you paste the JSON, how does it know what happens next? How does it generate predictions based on your data?
+Answer:It doesn't always work, and even if it does, the output may be incorrect. Therefore, it is necessary to keep the web search option enabled at all times
 
 
 Q26. Does the Python program use data older than one month? Are the predictions also based on periods longer than one month?
@@ -1348,179 +1341,187 @@ JSON OUTPUT:
 }
 
 
-🟣FINAL DEEPSEEK AI OUTPUT: EXAMPLE PREDICTIONS FOR JUNE 2026:
+🟣FINAL CHATGPT AI OUTPUT: EXAMPLE PREDICTIONS FOR JUNE 2026:
 
-
-Pre-Processing Algorithm Execution:
-
-· Located top_elements array.
-· Verified descending order by score.
-· Assigned dynamic indices (Rank 1 through Rank 10):
-  · Rank 1: 1. WAR CONFLICT
-  · Rank 2: 33. USA
-  · Rank 3: 34. CHINA
-  · Rank 4: 36. MIDDLE EAST
-  · Rank 5: 15. CLIMATE DISASTERS
-  · Rank 6: 32. INDIA
-  · Rank 7: 11. ENERGY CRISIS
-  · Rank 8: 16. DISEASE OUTBREAKS
-  · Rank 9: 37. AFRICA
-  · Rank 10: 17. NUCLEAR
-
-Generated Forecasts (30 total, strict pairing matrix):
-
-Forecast 1: Within the next 12 days, USA will authorize direct kinetic strikes inside a third country where Chinese state-linked contractors are embedded.
-The immediate consequence is a parallel naval showdown in the South China Sea as China invokes its "counter-intervention" doctrine.
-Precedent & Reason: [Rank 1 + Rank 2] + The 1969 Sino-Soviet border clashes (Zhenbao Island) where a single skirmish triggered full army mobilizations; today's hybrid proxy warfare echoes the 2016 U.S.-Russia tanker standoff in Syria.
-Probability: 89%.
-
-Forecast 2: Within the next 8 days, CHINA will unilaterally designate major US semiconductor equipment makers as "unreliable entities," freezing their local assets.
-This will crash Nasdaq-listed semi stocks by 12-18% within 48 hours and trigger an emergency WTO complaint by the US.
-Precedent & Reason: [Rank 1 + Rank 3] + Mirroring Japan's 1987 retaliation after US Toshiba sanctions, but amplified by the 2023 China rare-earth export controls on gallium; strategic doctrine: "managed decoupling through asymmetric dependency weaponization."
-Probability: 92%.
-
-Forecast 3: Within the next 5 days, MIDDLE EAST state actors will launch a coordinated missile/drone volley at US military positions in eastern Syria in response to a perceived imminent Israel ground incursion.
-The US will respond with air strikes against Iranian-linked militia command nodes, opening a second axis of active combat.
-Precedent & Reason: [Rank 1 + Rank 4] + Analogous to the 2020 Soleimani assassination followed by the Ain al-Asad base strikes; the difference today is the 96/98 parallel score matching the pre-1973 Yom Kippur tension density.
-Probability: 94%.
-
-Forecast 4: Within the next 15 days, a CLIMATE DISASTERS event (category 4 landfall or 500-year flood) will force the evacuation of a critical US military logistics hub in the Pacific, temporarily freezing munitions flow to forward assets.
-China will interpret this as an operational window and accelerate its submarine patrols in the Luzon Strait.
-Precedent & Reason: [Rank 1 + Rank 5] + The 2018 Camp Lejeune evacuation during Hurricane Florence delayed Marine rotational deployments for 3 weeks; climate as a strategic tempo breaker, codified in DoD's 2019 Climate Risk Analysis.
-Probability: 78%.
-
-Forecast 5: Within the next 10 days, INDIA will formally suspend the Indus Waters Treaty with Pakistan, citing "material breach" after a cross-border attack tied to water diversion infrastructure.
-Pakistan will retaliate by shutting down airspace to Indian overflights, forcing a diplomatic rupture and EU-UN emergency mediation.
-Precedent & Reason: [Rank 1 + Rank 6] + Identical trigger to the 1960 Indus Treaty's first major stress test in 1971 war; plus the 2025 Pahalgam-linked suspension signals (from JSON resource_wars field) show this is already in motion.
-Probability: 87%.
-
-Forecast 6: Within the next 7 days, an ENERGY CRISIS escalation will see the EU activate its "voluntary gas demand reduction" mandatory clause after a Russian gas pipeline explosion is confirmed as sabotage.
-Germany will revert two coal plants to reserve status, triggering Green party ministerial resignations and a coalition crisis.
-Precedent & Reason: [Rank 1 + Rank 7] + 2022 Nord Stream sabotage followed by 15% EU gas cut target; updated for current 88/98 pairing, similar to the 1973 oil embargo weeks before the Arab-Israeli war intensified.
-Probability: 91%.
-
-Forecast 7: Within the next 14 days, a DISEASE OUTBREAKS declaration (Ebola Bundibugyo, per JSON disease_alerts) will cross the DR Congo border into a major urban center (Goma or Kigali).
-This will force WHO to declare a PHEIC and trigger immediate border closures by Rwanda, Uganda, and Burundi, fracturing regional trade corridors.
-Precedent & Reason: [Rank 1 + Rank 8] + 2014 West Africa Ebola PHEIC declaration occurred 5 months after first case; today's travel and surveillance are better but civil conflict (Rank 1) blocks responders, exactly as 2018 Ebola in North Kivu was prolonged by armed groups.
-Probability: 83%.
-
-Forecast 8: Within the next 18 days, AFRICA will see a rapid succession of military coups (two in one week) in the Sahel, with Wagner-affiliated forces providing key tactical support to one junta.
-France will announce a complete withdrawal from its last permanent base in the region, handing influence fully to Russia's Africa Corps.
-Precedent & Reason: [Rank 1 + Rank 9] + The 2020-2023 "coup belt" (Mali, Burkina, Niger) sequence, each within 90 days of the previous; current mentions spike (85 score) alongside war conflict signals a compressed timeline, akin to 1960s Congo Crisis succession of coups.
-Probability: 86%.
-
-Forecast 9: Within the next 9 days, NUCLEAR saber-rattling will escalate when North Korea test-launches a simulated electromagnetic pulse (EMP) warhead to near-orbital altitude, triggering automatic US early warning systems.
-Japan and South Korea will hold unscheduled joint defense drills, and the UN Security Council will deadlock as China blocks a resolution.
-Precedent & Reason: [Rank 1 + Rank 10] + The 2017 "fire and fury" period included a North Korean H-bomb test 11 days after Trump's UN speech; today's 83 nuclear score + 98 war conflict score matches the Q4 1950 moment just before Truman authorized nuclear transfer to Guam.
+Forecast 1
+Within the next 9 days, the United States will expand military force posture around a major conflict zone and publicly warn against escalation.
+Regional allies will increase readiness levels and trigger emergency diplomatic consultations.
+Verified Precedent & Reason: [Rank 1 WAR CONFLICT + Rank 2 USA] + 1991 Gulf War (Operation Desert Shield/Desert Storm), where the United States rapidly expanded military deployments following Iraq's invasion of Kuwait. ([Office of the Historian][1])
 Probability: 88%.
 
-Forecast 10: Within the next 6 days, USA will leak intelligence that CHINA has deployed "special mission" troops to a Russian-occupied Ukrainian territory under a non-combat advisory role.
-China will respond by expelling five US diplomats and freezing FBI legal attaché operations in Hong Kong.
-Precedent & Reason: [Rank 2 + Rank 3] + The 2018 "Moscow- Beijing military coordination" leaks before the US withdrew from INF Treaty; the pattern of tit-for-tat diplomatic expulsions (2017 mutual closures of consulates in SF and Chengdu) shows 9-day cycle average.
-Probability: 90%.
-
-Forecast 11: Within the next 4 days, USA will sell 4 advanced nuclear reactor designs to Saudi Arabia via a Section 123 agreement with a "gold standard" non-proliferation clause that Riyadh will immediately seek to reinterpret.
-Israel will privately threaten preemptive strikes on Saudi nuclear infrastructure, escalating an intra-US ally crisis.
-Precedent & Reason: [Rank 2 + Rank 4] + The 2018 Saudi request for US nuclear tech followed by Khashoggi murder; the UAE's Barakah plant (2020) took 12 years from agreement to fuel load, but Middle East war score 96 compresses that timeline dangerously.
+Forecast 2
+Within the next 14 days, China will conduct a major military signaling operation near a disputed maritime zone.
+Shipping and regional defense monitoring activity will increase immediately afterward.
+Verified Precedent & Reason: [Rank 1 + Rank 3 CHINA] + 1995–1996 Third Taiwan Strait Crisis, where military exercises and missile deployments were used to signal strategic intent. ([Wikipedia][2])
 Probability: 85%.
 
-Forecast 12: Within the next 13 days, USA will announce that CLIMATE DISASTERS have triggered the "Disaster Relief" clause of the Defense Production Act, redirecting critical mineral stockpiles from battery production to military hardened electronics.
-Lithium and cobalt prices will spike 20%, causing EV manufacturers in Germany and Korea to announce temporary line shutdowns.
-Precedent & Reason: [Rank 2 + Rank 5] + The 2021 DPA Title III invocation for microchips during COVID; climate as a national security multiplier was first exercised in 2022 after Hurricane Ian disrupted semiconductor logistics in Florida.
-Probability: 76%.
-
-Forecast 13: Within the next 11 days, INDIA will sign a secret logistics support agreement with the US (modelled on LEMOA), allowing US warships to be repaired in Indian shipyards during active combat operations.
-China will retaliate by blocking two Indian pharmaceutical exports at the Port of Shanghai, citing "quality concerns."
-Precedent & Reason: [Rank 2 + Rank 6] + The 2016 LEMOA signing took 3 years of negotiation; in a 93 tension environment (India score), this mirrors the 1971 India-USSR treaty that tilted the balance during the Bangladesh war.
-Probability: 82%.
-
-Forecast 14: Within the next 7 days, an ENERGY CRISIS will cause the US to release 60 million barrels from the Strategic Petroleum Reserve (SPR) in coordination with Japan and Korea, driving oil prices below $115.
-OPEC+ will announce a surprise 500k b/d production cut within 72 hours, re-escalating prices.
-Precedent & Reason: [Rank 2 + Rank 7] + The 2022 SPR release of 180M barrels (largest ever) cut prices $20/bbl for 6 weeks; OPEC+ countered in October 2022 with a 2M b/d cut, precisely replicating this tug-of-war. Current oil price drop 12.2% (JSON commodities) is a pre-release market adjustment.
-Probability: 93%.
-
-Forecast 15: Within the next 20 days, DISEASE OUTBREAKS will trigger a US travel ban on four African countries, citing Ebola variant with "pandemic potential."
-The WHO will formally rebuke the US for violating International Health Regulations, and China will offer vaccine diplomacy flights to the affected nations.
-Precedent & Reason: [Rank 2 + Rank 8] + 2014 Ebola travel restrictions were imposed by US on May 8 (affecting Liberia, Sierra Leone, Guinea) and led to WHO criticism for "over-reaction." Today's 87 score + US 98 indicates repeat with faster diplomatic blowback.
-Probability: 79%.
-
-Forecast 16: Within the next 17 days, USA will designate a major AFRICA gold refinery as a "foreign terrorist organization facilitator" due to Wagner Group ties, freezing $400M in US-held assets.
-Russia will announce joint ruble-gold trading with the refinery's home country, bypassing SWIFT.
-Precedent & Reason: [Rank 2 + Rank 9] + The 2021 US sanctions on Sudan's RSF-linked gold firms; Wagner's Africa Corps (formerly Wagner) was designated a transnational criminal org in 2023, and the reaction (Russia-Ruble gold) mirrors the 2018 de-dollarization drive after US sanctions on Rusal.
-Probability: 84%.
-
-Forecast 17: Within the next 10 days, USA will resume subcritical nuclear tests at the Nevada Test Site, citing the need to verify aging warhead performance in a high-tension environment.
-Russia will suspend its moratorium on intermediate-range nuclear forces, and a new "mini arms race" in tactical nukes will begin.
-Precedent & Reason: [Rank 2 + Rank 10] + The US conducted subcritical tests (e.g., 2015 "Vermillion") even during New START; resumption in high tension echoes 1962 after the Cuban Missile Crisis, when the US resumed atmospheric testing 17 days later.
-Probability: 95%.
-
-Forecast 18: Within the next 5 days, CHINA will deploy a floating nuclear power platform within 50 nautical miles of the Paracel Islands, citing "research purposes."
-Vietnam and the Philippines will jointly protest, and the US will sail a carrier strike group through the area within 48 hours.
-Precedent & Reason: [Rank 3 + Rank 4] + China's 2021 deployment of a floating nuclear barge to the South China Sea was protested by ASEAN; today's 98+96 score compares to the 1987 Sino-Vietnamese naval clash at Johnson South Reef, where a 4-day warning preceded active fire.
+Forecast 3
+Within the next 7 days, a new military escalation in the Middle East will trigger international security warnings.
+Energy traders will immediately react with volatility expectations.
+Verified Precedent & Reason: [Rank 1 + Rank 4 MIDDLE EAST] + 1973 Yom Kippur War, where regional conflict rapidly expanded into broader geopolitical consequences. ([Origins][3])
 Probability: 91%.
 
-Forecast 19: Within the next 12 days, CHINA will refuse to accept any US climate envoy visit after a CLIMATE DISASTERS typhoon devastates Guangdong, blaming "US weather modification weapons" in state media.
-The US will cancel the next round of bilateral climate working group talks indefinitely.
-Precedent & Reason: [Rank 3 + Rank 5] + The 2019 "weather weapon" conspiracy theory was amplified after Typhoon Lekima; similar to the 2022 suspension of climate talks after Pelosi's Taiwan visit, but now with disaster score 93 accelerating the diplomatic freeze.
-Probability: 77%.
+Forecast 4
+Within the next 18 days, a climate-related emergency will disrupt operations in an active conflict-affected region.
+Humanitarian logistics pressure will increase.
+Verified Precedent & Reason: [Rank 1 + Rank 5 CLIMATE DISASTERS] + Logical deduction based on repeated modern conflict-disaster overlaps; no single direct historical analog fully matches this exact pairing.
+Probability: 74%.
 
-Forecast 20: Within the next 8 days, INDIA will publicly reproach CHINA's Belt and Road port project in Sri Lanka as a "debt trap" and offer an alternative $1.5B loan to Colombo with military access terms.
-China will respond by accelerating its submarine base construction in Gwadar, Pakistan, directly across the Arabian Sea from Indian naval assets.
-Precedent & Reason: [Rank 3 + Rank 6] + The 2017 India-Sri Lanka $300M credit line to counter China's Hambantota port; today's 98+93 tension mirrors the 1962 Sino-Indian war prelude, where border infrastructure was the flashpoint.
-Probability: 88%.
-
-Forecast 21: Within the next 6 days, CHINA will conduct a large-scale military exercise in the Taiwan Strait, firing live anti-ship missiles within 24 nautical miles of the island's territorial waters.
-Taiwan will scramble all combat aircraft, and the US will order a non-combatant evacuation of American citizens from the island within 72 hours.
-Precedent & Reason: [Rank 3 + Rank 7] + The August 2022 live-fire exercises encircling Taiwan after Pelosi's visit; but with energy crisis 88 + war conflict 98, this repeats the 1996 missile crisis tempo, where exercises preceded a US carrier deployment by 6 days.
-Probability: 96%.
-
-Forecast 22: Within the next 15 days, CHINA will report a "novel" respiratory pathogen outbreak at a Wuhan lab, but initially deny any linkage to gain-of-function research.
-DISEASE OUTBREAKS global surveillance will flag genetic sequences showing unnatural recombination, triggering a WHO investigation.
-Precedent & Reason: [Rank 3 + Rank 8] + December 2019 initial COVID reports from Wuhan were delayed 3 weeks; today's 98+87 combination mirrors the 2003 SARS cover-up period, where China hid cases for 3 months until WHO pressure forced transparency.
+Forecast 5
+Within the next 15 days, India will increase military preparedness or border-security measures following regional security developments.
+Neighboring states will respond with heightened monitoring.
+Verified Precedent & Reason: [Rank 1 + Rank 6 INDIA] + 1999 Kargil Conflict, where military escalation rapidly led to force mobilization and diplomatic intervention.
 Probability: 82%.
 
-Forecast 23: Within the next 19 days, AFRICA will default on a $2.1B Chinese sovereign loan for a railway project, and CHINA will seize the port assets at the terminus as collateral without international arbitration.
-The African Union will formally file a complaint with the UN General Assembly about "neocolonial asset stripping."
-Precedent & Reason: [Rank 3 + Rank 9] + The 2019 Chinese takeover of Sri Lanka's Hambantota port after default; in Africa, Kenya's SGR loan (2017) carries identical default/asset seizure clauses. Current Africa debt to China ($73B in 2022) makes this imminent.
+Forecast 6
+Within the next 11 days, conflict activity near strategic energy infrastructure will intensify.
+Natural-gas and oil-risk premiums will rise.
+Verified Precedent & Reason: [Rank 1 + Rank 7 ENERGY CRISIS] + 1973 Oil Crisis triggered by the Yom Kippur War and subsequent OAPEC embargo. ([Federal Reserve History][4])
+Probability: 90%.
+
+Forecast 7
+Within the next 21 days, a conflict zone will report a renewed disease containment concern.
+Aid organizations will redirect emergency resources.
+Verified Precedent & Reason: [Rank 1 + Rank 8 DISEASE OUTBREAKS] + Logical deduction based on repeated wartime disease surges; no direct singular precedent perfectly mirrors this pairing.
+Probability: 69%.
+
+Forecast 8
+Within the next 24 days, armed instability in an African state will prompt international security attention.
+Cross-border movement and humanitarian concerns will increase.
+Verified Precedent & Reason: [Rank 1 + Rank 9 AFRICA] + Multiple precedents including Sudan and Congo conflict cycles; strategic reasoning based on recurring patterns.
+Probability: 76%.
+
+Forecast 9
+Within the next 12 days, a nuclear-related security statement will be issued amid an active military crisis.
+Global diplomatic engagement will intensify.
+Verified Precedent & Reason: [Rank 1 + Rank 10 NUCLEAR] + Cold War nuclear-alert episodes during regional conflicts provide verified precedent.
+Probability: 83%.
+
+Forecast 10
+Within the next 17 days, the United States and China will exchange new security warnings regarding military activity in the Indo-Pacific.
+Regional allies will publicly reaffirm existing commitments.
+Verified Precedent & Reason: [Rank 2 USA + Rank 3 CHINA] + Third Taiwan Strait Crisis involving U.S. carrier deployments and Chinese military signaling. ([Belfer Center][5])
+Probability: 89%.
+
+Forecast 11
+Within the next 10 days, Washington will intensify diplomatic engagement concerning a Middle East flashpoint.
+Additional security consultations will follow.
+Verified Precedent & Reason: [Rank 2 + Rank 4] + 1991 Gulf War coalition diplomacy led by the United States. ([Office of the Historian][1])
 Probability: 86%.
 
-Forecast 24: Within the next 11 days, CHINA will announce its nuclear warhead count has surpassed 1,500 (up from 500 in 2021) and will deploy 36 new silos in Xinjiang.
-The US will cancel the New START treaty extension and begin prototyping a new land-based ICBM beyond the 2027 Sentinel timeline.
-Precedent & Reason: [Rank 3 + Rank 10] + The Pentagon's 2022 China Military Power Report estimated 400 warheads by 2025; actual acceleration mirrors the 1981-1986 Reagan buildup when the USSR deployed SS-24/25 missiles. Today's 98+83 score matches the 1962 missile gap crisis.
-Probability: 94%.
+Forecast 12
+Within the next 26 days, U.S. authorities will announce additional disaster-response coordination measures.
+Infrastructure resilience discussions will accelerate.
+Verified Precedent & Reason: [Rank 2 + Rank 5] + Hurricane Katrina-era federal emergency mobilizations; logical extrapolation.
+Probability: 66%.
 
-Forecast 25: Within the next 9 days, a CLIMATE DISASTERS-induced sandstorm will disable two major MIDDLE EAST airports (Dubai and Doha) simultaneously, halting 40% of regional air cargo.
-Oil and gas exports via tanker will spike rates by 300% as cargo shifts to sea, and insurance premiums for Gulf shipping will triple.
-Precedent & Reason: [Rank 4 + Rank 5] + The April 2024 Dubai flooding shut down the airport for 2 days; climate models predict increasing frequency; current 96+93 pairing matches the 2008 Iraq sandstorm that grounded US air operations for 5 days.
-Probability: 75%.
-
-Forecast 26: Within the next 7 days, INDIA will mediate a direct Israel-Saudi communication channel after a MIDDLE EAST airstrike accidentally hits an Indian-owned vessel in the Red Sea.
-The Indian Navy will deploy two destroyers to the Bab el-Mandeb as a "deterrence and rescue" force.
-Precedent & Reason: [Rank 4 + Rank 6] + India's 2021 rescue of an Israeli-linked ship after a Gulf of Oman attack; India's "Act West" policy gives it rare trust with both Riyadh and Tel Aviv (93+96). The 2019 India-Iran-Israel mediation over tanker attacks shows a 6-8 day window.
+Forecast 13
+Within the next 19 days, the United States will deepen strategic engagement with India on regional security matters.
+Defense coordination announcements will follow.
+Verified Precedent & Reason: [Rank 2 + Rank 6] + U.S.-India strategic alignment after the 2005 Civil Nuclear Agreement period.
 Probability: 81%.
 
-Forecast 27: Within the next 10 days, MIDDLE EAST oil infrastructure (Ras Tanura refinery) will be hit by a drone swarm, taking 5% of global refining capacity offline for at least 30 days.
-ENERGY CRISIS will escalate, with US gasoline prices rising $0.60/gal within a week, and Biden will order an emergency anti-drone task force to the Gulf.
-Precedent & Reason: [Rank 4 + Rank 7] + The September 2019 Abqaiq-Khurais attack cut Saudi oil production 50% for weeks; today's 96+88 score is identical to pre-attack pattern in 2019, where chatter spiked 11 days prior.
-Probability: 93%.
-
-Forecast 28: Within the next 16 days, a DISEASE OUTBREAKS (Marburg variant) will be confirmed in MIDDLE EAST migrant labor housing in Qatar, forcing a lockdown of the Ras Laffan LNG facility.
-Natural gas prices will spike 30% in Europe within 48 hours, and the EU will activate the "solidarity mechanism" for gas sharing.
-Precedent & Reason: [Rank 4 + Rank 8] + 2021 Marburg in Guinea was contained but migrant camp transmission risk is higher; the 2012 MERS outbreak in Saudi hospitals required 21 days to contain, but labor camps (Qatar 2022 World Cup built) have 6x density.
-Probability: 80%.
-
-Forecast 29: Within the next 14 days, MIDDLE EAST will see a kingdom (Jordan or Bahrain) announce a secret uranium enrichment pilot project, citing "energy diversification."
-AFRICA's uranium exporting nations (Niger, Namibia) will demand a 500% price increase for yellowcake, citing scarcity.
-Precedent & Reason: [Rank 4 + Rank 9] + The UAE's Barakah plant (2012 announcement) started enrichment talks in secret 18 months earlier; Africa's uranium cartel behavior after Niger's 2023 coup mirrors 1970s oil embargo. 96+85 pairing amplifies.
-Probability: 78%.
-
-Forecast 30: Within the next 13 days, MIDDLE EAST will experience a failed nuclear command-and-control cyber intrusion (traced to a state actor) targeting a research reactor control room, causing a 4-hour safety systems reboot.
-The IAEA will invoke a "special inspection" under the Comprehensive Safeguards Agreement, the first since 2003.
-Precedent & Reason: [Rank 4 + Rank 10] + The 2010 Stuxnet attack on Natanz (detected 17 months after deployment) took 4 days to trigger Iranian alarms; today's 96+83 score with "cyber + kinetic" pattern (JSON critical alerts) suggests a compressed 13-day window.
+Forecast 14
+Within the next 8 days, U.S. officials will issue warnings concerning global energy-market instability.
+Market participants will increase hedging activity.
+Verified Precedent & Reason: [Rank 2 + Rank 7] + 1973 Oil Embargo and later Gulf War energy-security responses. ([Office of the Historian][6])
 Probability: 87%.
 
+Forecast 15
+Within the next 20 days, U.S.-supported health-security monitoring will expand in response to an outbreak concern.
+International agencies will increase coordination.
+Verified Precedent & Reason: [Rank 2 + Rank 8] + Ebola response operations supported by U.S. agencies during West African outbreaks.
+Probability: 72%.
 
+Forecast 16
+Within the next 22 days, the United States will announce additional engagement in an African security or humanitarian issue.
+Regional organizations will seek external assistance.
+Verified Precedent & Reason: [Rank 2 + Rank 9] + U.S. involvement in counterterror and stabilization missions across Africa.
+Probability: 71%.
 
+Forecast 17
+Within the next 13 days, Washington will reiterate nuclear deterrence commitments to allies.
+Strategic competitors will issue responses.
+Verified Precedent & Reason: [Rank 2 + Rank 10] + NATO nuclear deterrence posture precedents during Cold War and post-Cold War crises.
+Probability: 84%.
+
+Forecast 18
+Within the next 16 days, China will increase diplomatic activity linked to a Middle East security development.
+Energy-security calculations will influence negotiations.
+Verified Precedent & Reason: [Rank 3 + Rank 4] + China's expanding Middle East mediation role and energy-security diplomacy.
+Probability: 78%.
+
+Forecast 19
+Within the next 23 days, climate disruptions will affect Chinese-linked supply or infrastructure networks.
+Commodity logistics will face temporary pressure.
+Verified Precedent & Reason: [Rank 3 + Rank 5] + Repeated flooding and typhoon disruptions affecting Chinese industrial regions.
+Probability: 73%.
+
+Forecast 20
+Within the next 18 days, China will strengthen regional engagement with India while maintaining strategic caution.
+Border and trade discussions will intensify simultaneously.
+Verified Precedent & Reason: [Rank 3 + Rank 6] + Post-Galwan diplomatic stabilization efforts between China and India.
+Probability: 70%.
+
+Forecast 21
+Within the next 12 days, Chinese authorities will increase monitoring of disease-transmission risks tied to international movement.
+Regional health agencies will issue alerts.
+Verified Precedent & Reason: [Rank 3 + Rank 8] + SARS-era and COVID-era disease-control mobilizations.
+Probability: 75%.
+
+Forecast 22
+Within the next 27 days, China will expand economic or infrastructure engagement in Africa.
+Strategic resource competition will intensify.
+Verified Precedent & Reason: [Rank 3 + Rank 9] + Belt and Road expansion and long-term China-Africa investment programs.
+Probability: 80%.
+
+Forecast 23
+Within the next 14 days, China will respond to nuclear-security developments with new strategic messaging.
+Regional military analysts will reassess risk levels.
+Verified Precedent & Reason: [Rank 3 + Rank 10] + Historical responses to Korean Peninsula nuclear crises.
+Probability: 77%.
+
+Forecast 24
+Within the next 25 days, Chinese officials will emphasize strategic stability while criticizing foreign military deployments.
+Regional security tensions will remain elevated.
+Verified Precedent & Reason: [Rank 3 + Rank 10] + Taiwan Strait crisis-era deterrence signaling. ([Encyclopedia Britannica][7])
+Probability: 79%.
+
+Forecast 25
+Within the next 11 days, a severe weather event in the Middle East will strain infrastructure already affected by geopolitical tensions.
+Emergency-response resources will be diverted.
+Verified Precedent & Reason: [Rank 4 MIDDLE EAST + Rank 5 CLIMATE DISASTERS] + Logical deduction based on increasing climate-security overlap; no direct singular historical analog verified.
+Probability: 68%.
+
+Forecast 26
+Within the next 9 days, India will increase diplomatic engagement with key Middle Eastern partners regarding security and energy stability.
+Trade and energy discussions will accelerate.
+Verified Precedent & Reason: [Rank 4 + Rank 6 INDIA] + India's repeated Gulf-security diplomacy during regional crises.
+Probability: 83%.
+
+Forecast 27
+Within the next 6 days, renewed Middle East tensions will trigger concerns over energy supply routes.
+Commodity volatility will rise rapidly.
+Verified Precedent & Reason: [Rank 4 + Rank 7 ENERGY CRISIS] + 1973 Yom Kippur War and resulting Arab Oil Embargo. ([Origins][3])
+Probability: 92%.
+
+Forecast 28
+Within the next 28 days, health authorities will monitor a disease event linked to travel flows connected to the Middle East.
+Border screening measures may be expanded.
+Verified Precedent & Reason: [Rank 4 + Rank 8 DISEASE OUTBREAKS] + MERS outbreaks originating in the Arabian Peninsula.
+Probability: 65%.
+
+Forecast 29
+Within the next 17 days, an African government will seek mediation support from Middle Eastern or Gulf actors.
+Regional influence competition will increase.
+Verified Precedent & Reason: [Rank 4 + Rank 9 AFRICA] + Sudan and Horn of Africa mediation initiatives backed by Gulf states.
+Probability: 72%.
+
+Forecast 30
+Within the next 13 days, nuclear negotiations involving a Middle Eastern actor will re-enter public focus.
+Major powers will issue coordinated statements.
+Verified Precedent & Reason: [Rank 4 + Rank 10 NUCLEAR] + Iran nuclear negotiations and related regional security crises.
+Probability: 88%.
 
 
 
@@ -1588,7 +1589,7 @@ For example, it might examine:
 - Event 1: Oil Crisis
 - Event 2: Middle East Tensions
 
-Because the AI has been trained on vast amounts of historical information, it understands how these types of events have interacted in the past.
+Because the AI has been trained on vast amounts of historical information, it understands how these types of events have interacted in the past using real time web search.
 
 Based on those historical patterns, it generates a forecast such as:
 
@@ -1596,9 +1597,9 @@ Based on those historical patterns, it generates a forecast such as:
 
 Step 5: The Triple Check
 
-To reduce the likelihood of random or inconsistent predictions, the system repeats the forecasting process three separate times using three independent AI runs.
+To reduce the likelihood of random or inconsistent predictions, the system repeats the forecasting process two separate times using three independent same AI runs.
 
-If all three runs produce the same prediction, confidence in that forecast increases significantly.
+If all two runs produce the same prediction, confidence in that forecast increases significantly.
 
 If the runs produce different predictions, the system presents all plausible outcomes, giving users a broader "stereo view" of how events could unfold.
 
