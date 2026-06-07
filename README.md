@@ -22,7 +22,9 @@ The system continuously monitors 44 critical global elements, including:
 
 Its objective is simple: collect vast amounts of real-world data, measure momentum, identify patterns, and estimate what is most likely to happen over the next 30 days.
 
----
+# Sentinel-44 World
+
+![Sentinel-44 World](Sentinel-44-world.png)
 
 How Sentinel-44 Works
 
